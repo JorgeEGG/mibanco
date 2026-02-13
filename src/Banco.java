@@ -7,8 +7,10 @@ public class Banco {
         System.out.println("\nBienvenido al Banco de Colombia!");
         System.out.print("\nIngrese su nombre: ");
         String nombre = teclado.nextLine();
+
         System.out.print("Ingrese su tipo de cuenta: ");
         String tipoCuenta = teclado.nextLine();
+
         double saldoDisponible = 15995000;
         int opcion = 0;
         String menu = """
@@ -76,5 +78,6 @@ public class Banco {
                     teclado.nextLine(); // Esperar a que el usuario presione Enter
             }
         }
+    teclado.close();
     }
 }
